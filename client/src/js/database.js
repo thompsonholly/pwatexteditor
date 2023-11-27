@@ -1,3 +1,6 @@
+// DONE? CHeck again
+
+
 /*
   The idb package being required below provides some syntactic sugar around the methods needed to work with IndexedDB. Yes, the code you see below is actually a "prettier" version of what you would normally have to write. Be thankful. We've only been using the idb package since mid 2022. Before that students had to write this code with no helper methods. These students deserve a medal.
 */
@@ -23,17 +26,17 @@ const initdb = async () =>
 */
 export const putDb = async (content) => {
   // First, create a variable, and set it to asyncronously await the opening of the database. Replace the items in all caps
-  
+
   // TODO: Change YOUR_OPEN_DB_VAR to whatever variable name you wanT. Note that you'll then need to change any other occcurences of YOUR_OPEN_DB_VAR to the same variable name.
-  const YOUR_OPEN_DB_VAR = await openDB(DB_NAME, 1);
+  const openDB = await openDB(DB_NAME, 1);
 
   // TODO: Now create a variable for the transaction; again, this will be referenced below.
-  const YOUR_TX_VAR = YOUR_OPEN_DB_VAR.transaction(DB_NAME, 'readwrite');
+  const transDB = op.transaction(DB_NAME, 'readwrite');
 
   // TODO: Now create a variable for the store
-  const YOUR_STORE_VAR = YOUR_TX_VAR.objectStore(DB_NAME);
+  const storeDB = transDB.objectStore(DB_NAME);
 
-  const request = YOUR_STORE_VAR.put({ id: 1, value: content });
+  const request = storeDB.put({ id: 1, value: content });
   const result = await request;
   console.log('🚀 - data saved to the database', result.value);
 };
@@ -43,8 +46,13 @@ export const putDb = async (content) => {
 */
 export const getDb = async () => {
   // You can duplicate the same lines of code from above, except that the transaction will be 'readonly'
-  
+
   // TODO: Copy LINES 28, 31 and 34 above; the new line 31 code should be "readonly"
+  const openDB = await openDB(DB_NAME, 1);
+
+  const transDB = op.transaction(DB_NAME, 'readonly');
+
+  const storeDB = transDB.objectStore(DB_NAME);
 
   // Leave the rest as-is
   const request = store.get(1);
