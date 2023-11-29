@@ -2,11 +2,16 @@
 
 ## Description
 
-A backend app to edit text. 
+A project to configure and update a website to utilize a functional PWA.
 
-## How to Use
+## Table of Contents
 
-## Mock Up
+-[PWA](#pwa)
+-[Website Links](#websitelinks)
+-[Credits](#credits)
+
+  <a id="pwa"></a>
+## PWA Screenshots
 
 ![Demo the manifest file in the browser](./images/jate.png)
 
@@ -14,9 +19,15 @@ A backend app to edit text.
 
 ![Demo with a IndexedDB storage named 'jate' in the browser](./images/jatestorage.png)
 
+<a id="websitelinks"></a>
 ## Website Links
 
 Github https://github.com/thompsonholly/pwatexteditor
 
 Heroku https://hw-jate-9d7092326c60.herokuapp.com/
+
+<a id="credits"></a>
+## Credits
+
+Created by Holly Thompson, a student attending the University of Minnesota Bootcamp. Gary Almes, U of MN instructor, provided starter code to give additional help for this project.
 
