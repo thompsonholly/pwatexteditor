@@ -2,7 +2,7 @@
 
 ## Description
 
-A user friendly app to edit text. 
+A backend app to edit text. 
 
 ## How to Use
 
@@ -18,7 +18,7 @@ A user friendly app to edit text.
 
 ## Links
 
-(github)
+Github https://github.com/thompsonholly/pwatexteditor
 
-(heroku)
+Heroku https://hw-jate-9d7092326c60.herokuapp.com/
 
