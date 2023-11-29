@@ -73,7 +73,7 @@ const paths = ['style', 'script', 'worker']
 // If you supply the correct values below, this file is complete.
 
 
-registerRoute(({ request }) => paths.Arr.includes(request.destination),
+registerRoute(({ request }) => paths.includes(request.destination),
   new StaleWhileRevalidate({
     cacheName: 'asset-cache',
     plugins: [
