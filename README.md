@@ -8,15 +8,13 @@ A backend app to edit text.
 
 ## Mock Up
 
-![Demo being used in the browser and then installed.]
+![Demo the manifest file in the browser](./images/jate.png)
 
-![Demo the manifest file in the browser.]
+![Demo with a registered service worker in the browser](./images/srw.png)
 
-![Demo with a registered service worker in the browser.]
+![Demo with a IndexedDB storage named 'jate' in the browser](./images/jatestorage.png)
 
-![Demo with a IndexedDB storage named 'jate' in the browser.]
-
-## Links
+## Website Links
 
 Github https://github.com/thompsonholly/pwatexteditor
 
